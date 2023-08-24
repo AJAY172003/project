@@ -47,11 +47,11 @@ const navigate=useNavigate();
     }
   };
 
-  let newdata = dataList.map((val, index) => ({
+  let newdata = dataList.map((val, _index) => ({
     id: val.id,
     userid: val.userId,
     title: val.title,
-    body: val.body,
+    body: val.body
   }));
 
   const rows: GridRowsProp = newdata;
